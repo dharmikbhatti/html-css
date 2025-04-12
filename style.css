@@ -183,7 +183,7 @@ main {
 }
 
 #box4 {
-    margin-top: 2vw;
+    margin-top: calc(1rem + 2vw);
     background-color: #fff;
     color: #000;
     display: flex;
@@ -202,6 +202,7 @@ main {
     padding: .5vw 1vw;
     margin-top: 1vw;
     cursor: pointer;
+    font-size: calc(1rem + .1vw);
 }
 
 #about>button:hover {
@@ -211,7 +212,6 @@ main {
 button>a {
     text-decoration: none;
     color: #000;
-    font-size: 1vw;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -331,7 +331,37 @@ p {
         width: 140vw;
     }
 
-    
+    #hero h1,#hero-skills>h1,
+    #projects>h1,
+    #photos>h1,
+    #contact>h1{
+        font-size: calc(1.5rem + 1vw);
+    }
+
+    #hero p,
+    #hero-skills p{
+        padding-top: 4vw;
+        font-size: calc(.7rem + 1vw);
+    }
+
+    .skill-container{
+        height: 4vw;
+        border-radius: 10vw;
+    }
+
+    #box4 h2{
+        font-size: calc(1rem + 1vw);
+    }
+
+    #box4 p{
+        color: #222222;
+        font-size: 3vw;
+    } 
+
+    #about>button{
+        margin-top: 4vw;
+        padding: 2vw;
+    }
 
 }
 
