@@ -363,6 +363,13 @@ p {
         padding: 2vw;
     }
 
+    #projects{
+        margin-top: 10vw;
+    }
+
+    #photos{
+        margin-top: 10vw;
+    }
 }
 
 @media (min-width:481px) and (max-width:1024px) {}
