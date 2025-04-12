@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Gilroy;
+    src: url(./cdn/font/Gilroy.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #000;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    height: 100vh;
+    width: 10vw;
+    background-color: #222222;
+    overflow: auto;
+    font-family: Gilroy;
+    z-index: 1;
+
+}
+
+nav a:hover {
+    background-color: #000;
+    transition: all .3s;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1vmax;
+    color: white;
+    padding: 2vw;
+    gap: .5vw;
+    font-weight: 500;
+}
+
+nav i {
+    font-size: 1.8vmax;
+}
+
+nav img {
+    padding-top: 1VW;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+    height: auto;
+    width: 7vw;
+    filter: drop-shadow(0 -.1rem 0.2rem #a3a8a6b2) brightness(0.9);
+    border-radius: 100vw;
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    padding: 6vw 12vw 6vw 22vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+#home {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 3vw;
+}
+
+#home h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 3.8vw;
+    padding-top: 1vw;
+}
+
+#home h4 {
+    color: white;
+    font-weight: 300;
+    padding-top: .8vw;
+}
+
+#home img {
+    height: auto;
+    width: 60vw;
+    padding-top: 4vw;
+}
+
+#about {
+    height: auto;
+    width: 100%;
+    color: white;
+    padding-top: 8vw;
+    
+}
+
+#hero h1 {
+    display: inline-block;
+    font-size: 2.4vw;
+    font-weight: 400;
+    padding-right: 1.7vw;
+    padding-bottom: .6vw;
+    border-bottom: 1px solid #fff;
+}
+
+#hero p {
+    font-size: 1.2vw;
+    line-height: 1.4;
+    padding-top: 1vw;
+    color: #868686;
+}
+
+#hero-skills>h1,
+#projects>h1,
+#photos>h1,
+#contact>h1 {
+    display: inline-block;
+    font-size: 1.8vw;
+    font-weight: 400;
+    padding: 4vw 1.4vw 1vw 0;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2vw;
+}
+
+#hero-skills p {
+    font-size: 1vw;
+    letter-spacing: .2vw;
+    margin-bottom: .3vw;
+    color: #c5c5c5;
+}
+
+.skill-container {
+    width: 100%;
+    background-color: #fff;
+    height: 1.4vw;
+    border-radius: .7vw;
+    margin-bottom: 1vw;
+}
+
+.html {
+    width: 90%;
+    height: 100%;
+    background-color: #616161;
+}
+
+.css {
+    width: 90%;
+    height: 100%;
+    background-color: #616161;
+}
+
+.js {
+    width: 78%;
+    height: 100%;
+    background-color: #616161;
+}
+
+.react {
+    width: 74%;
+    height: 100%;
+    background-color: #616161;
+}
+
+.tail {
+    width: 83%;
+    height: 100%;
+    background-color: #616161;
+}
+
+#box4 {
+    margin-top: 2vw;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.box4-in {
+    padding: 3vw;
+    font-weight: 400;
+}
+
+#about>button {
+    border: none;
+    padding: .5vw 1vw;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+#about>button:hover {
+    background-color: #c9c9c9;
+}
+
+button>a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1vw;
+    font-family: "Montserrat", sans-serif;
+}
+
+#photos {
+    height: auto;
+    width: 100%;
+    color: white;
+}
+
+#allPhotos {
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    /* background-color: #333; */
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    height: 34vw;
+}
+
+
+#allPhotos>img {
+    height: 100%;
+    width: auto;
+    padding: 0 1vw;
+    border-right: .1vw solid #7f7f7f;
+}
+
+#contact {
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+.con-design {
+    display: flex;
+    align-items: center;
+    gap: 1.4vw;
+    padding: 1vw 0vw;
+}
+
+.con-design a,
+p {
+    text-decoration: none;
+    color: #b0b0b0;
+}
+
+.con-design p:hover>a {
+    color: rgb(252, 252, 2);
+    text-decoration: underline;
+}
+
+.con-design i {
+    font-size: 2vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px) {
+
+    .fs-base-mob{
+        font-size: 60vw;
+    }
+    nav {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 3vw;
+    }
+
+    nav i::before {
+        display: none;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    main {
+        height: 100vh;
+        width: 100vw;
+        padding: 0 4vw;
+        overflow-x: hidden;
+    }
+
+    #home{
+        padding-top: 15vw;
+    }
+
+    #home h1{
+        font-size: 8vw
+    }
+
+    #home h4{
+        font-size: 2.8vw;
+        font-weight: 200;
+    }
+
+    #home img{
+        width: 130vw;
+    }
+
+    
+
+}
+
+@media (min-width:481px) and (max-width:1024px) {}
